@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Address Book</title>
+		<%= stylesheet_link_tag 'jqtouch', 'themes/jqt/theme', 'application_iphone' %>
+		<%= javascript_include_tag 'jquery.1.3.2.min', 'jqtouch' %>
+		<script type="text/javascript" charset="utf-8">
+		  $.jQTouch({
+			    icon: 'jqtouch.png',
+			    statusBar: 'black'
+			});
+		</script>
+    <%= yield(:head) %>
+  </head>
+  <body>
+		  <%= yield %>
+  </body>
+</html>

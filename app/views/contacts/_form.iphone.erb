@@ -1,0 +1,12 @@
+<% form_for @contact do |f| %>
+  <%= f.error_messages %>
+  <ul class="rounded">
+    <li>
+      <%= f.text_field :name, :placeholder => "Name" %>
+    </li>
+    <li>
+      <%= f.text_field :email, :placeholder => "Email" %>
+    </li>
+  </ul>
+  <a style="margin:0 10px;color:rgba(0,0,0,.9)" href="#" class="submit whiteButton">Submit</a>
+<% end %>

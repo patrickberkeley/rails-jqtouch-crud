@@ -1,0 +1,16 @@
+<% title "Contact" %>
+
+<p>
+  <strong>Name:</strong>
+  <%=h @contact.name %>
+</p>
+<p>
+  <strong>Email:</strong>
+  <%=h @contact.email %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_contact_path(@contact) %> |
+  <%= link_to "Delete", {:controller => 'contacts', :action => 'delete', :id => @contact}, :class => "delete" %> |
+  <%= link_to "View All", contacts_path %>
+</p>

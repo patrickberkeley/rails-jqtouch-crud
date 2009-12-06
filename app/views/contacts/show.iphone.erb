@@ -1,0 +1,17 @@
+<% title "Contact", false %>
+
+<div id="<%= @contact.id %>">
+<div class="toolbar">
+  <h1>Contact</h1>
+  <%= link_to "Home", contacts_path, :class => "button" %>
+</div>
+<ul class="edgetoedge">
+	<li class="sep">Name</li>
+	<li><%=h @contact.name %></li>
+	<li class="sep">Email</li>
+  <li><%=h @contact.email %></li>
+</ul>
+<ul class="individual">
+  <li><%= link_to "Edit", edit_contact_path(@contact) %></li>
+	<li><%= link_to "Delete", {:controller => 'contacts', :action => 'delete', :id => @contact}, :class => "delete" %></li>
+</ul>
